@@ -1,0 +1,183 @@
+.hero-image {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/Hero_Section_Photo-100.jpg);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    bottom: 5vh;
+    text-align: center;
+    width: 50vw;
+    position: absolute;
+    margin: auto;
+    left: 25vw;
+}
+
+.img-container {
+    height: auto;
+}
+
+.smf-logo img {
+    object-fit: contain;
+    /*background-image: url(../../images/logos/smf-logo.png);*/
+    /*height: 100%;*/
+
+    /* Center and scale the image nicely */
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+}
+
+.marketing-text h1 {
+    font: normal normal normal 37px/49px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.navigation-buttons-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2vw;
+    margin-top: 10vh;
+}
+
+.header-button {
+    background: #00805D 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #00000029;
+    border-radius: 20px;
+    font: normal normal normal 24px/32px Roboto;
+    min-width: 13vw;
+}
+
+.header-button a {
+    color: #FFFFFF;
+    display: block;
+    padding: 2vh;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1537px) {
+    .hero-text .smf-logo img {
+        max-width: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-text .smf-logo img {
+        max-width: 60vw;
+    }
+
+    .img-container {
+        height: auto;
+    }
+
+    .hero-text {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .marketing-text h1 {
+        font: normal normal normal 23px/34px Roboto;
+    }
+
+    .header-button {
+        font: normal normal normal 1.5rem Roboto;
+    }
+
+    .header-button a {
+        /*padding: 3vh;*/
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        padding: 5vw;
+        display: block;
+    }
+
+    .navigation-buttons-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2vw;
+        margin-top: 5vh;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .header-button {
+        min-width: 30vw;
+    }
+
+}
+
+@media (max-width: 1199px) and (orientation: landscape) {
+
+    .header-button {
+        min-width: 30vw;
+    }
+
+    .navigation-buttons-header {
+        flex-direction: row;
+        margin-top: -2vh;
+    }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+
+    .header-button {
+        min-width: 40vw;
+    }
+
+}
+
+
+@media (max-width: 767px) and (orientation: landscape) {
+
+    .header-button {
+        min-width: 20vw;
+    }
+
+    .navigation-buttons-header {
+        flex-direction: row;
+        margin-top: -2vh;
+    }
+
+
+    .header-button {
+        width: 20vw;
+    }
+}
+

@@ -1,0 +1,147 @@
+/* The navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    /*overflow: hidden;*/
+    background-color: transparent;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.mobile-dropdown-menu {
+    display: none;
+}
+
+.mobile-dropdown-menu .m-4,
+.mobile-dropdown-menu .mb-5 {
+    margin: 0!important;
+}
+
+.mobile-dropdown-menu .fa-bars {
+    font-size: 2rem;
+    color: #00805D;
+}
+
+.navbar-fixed-top.scrolled .fa-bars {
+    color: #00805D;
+}
+
+.dropdown-menu.dropdown-menu-end.show {
+    right: 1rem;
+    border-radius: 1rem;
+    min-width: 50vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dropdown-menu.dropdown-menu-end.show a {
+    font: normal normal normal 1.3rem Roboto;
+    letter-spacing: 0px;
+    color: #00805D;
+}
+
+.dropdown-divider {
+    width: 80%;
+    height: 0;
+    margin: 0.1rem 0;
+    overflow: hidden;
+    border-top: 2px solid #00805D;
+    margin-left: 1rem;
+}
+
+/* Links inside the navbar */
+.navbar .navigation-menu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+/* Change background on mouse-over */
+.navbar .navigation-menu a:hover {
+    background: #00805D;
+    color: #FFFFFF;
+}
+
+.logo-text {
+    font: normal normal 900 32px/43px Roboto;
+    letter-spacing: 0px;
+    color: #00805D;
+    margin-left: 10vw;
+    text-decoration-line: none;
+}
+
+.contacts-text {
+    font: normal normal normal 24px/32px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-right: 2vw;
+}
+
+.navbar-fixed-top.scrolled {
+    box-shadow: 12px 8px 10px rgb(0 0 0 / 20%);
+    background-color: #fff !important;
+    transition: all 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .navigation-menu a:hover {
+
+    background: #e4f3ee;
+}
+
+.navbar-fixed-top.scrolled .navigation-menu .contacts-text {
+    color: #00805D;
+}
+
+
+/*copyright*/
+.copyright {
+    height: 7vh;
+    background: #00805D;
+    text-align: center;
+}
+
+.copyright p {
+    color: #FFFFFF;
+    top: 3vh;
+    position: relative;
+}
+
+@media only screen and (max-width: 1199px) {
+    .navigation-menu  a {
+        font: normal normal normal 19px/18px Roboto;
+    }
+
+    .logo-text {
+        margin-left: 6vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navigation-menu {
+        display: none;
+    }
+
+    .mobile-dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-section {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        margin: 1.5rem!important;
+    }
+
+    .mobile-dropdown-menu .nav-link:focus, .nav-link:hover {
+        color: #00805D;
+    }
+
+}
